@@ -90,7 +90,9 @@ def menu():
                 option = input("What would you like to do with your account?")
                 print("\t")
                 if option == "1":
-                    print("1")
+                    p4 = user.User()
+                    print(p4.update())
+                    menu()
                 if option == "2":
                     print("Are you sure you want to delete your account?")
                     print("1. Yes")
