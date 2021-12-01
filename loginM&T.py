@@ -113,4 +113,24 @@ class LoggingIn:
         print("Account Successfully Created!")
         
     def logOn(self):
-        True
+        while True:
+            userName = input("Username: ")
+            password = input("Password: ")
+            file1 = open('classUser.txt', 'r')
+            Items = file1.readlines()
+            i = 0
+            match = 0
+            for j in Items:
+                currItem = Items[i]
+                currItemArray = currItem.split("|")
+                
+                if userName == currItemArray[0]:
+                    
+                    if password == currItemArray[1]:
+                        
+                        match = 1
+                i += 1
+            if match != 1:
+                print("The username or password is incorrect please try again.")
+            else:
+                break
