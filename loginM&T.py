@@ -68,5 +68,27 @@ class LoggingIn:
             option = input(": ")
             if option == "1":
                 break
+        
+        #writing to file
+        newUser = [userName, password, address, city, state, paymentInfo1, paymentInfo2]
+        newUser.insert(1, "|")
+        newUser.insert(3, "|")
+        newUser.insert(5, "|")
+        newUser.insert(7, "|")
+        newUser.insert(9, "|")
+        newUser.insert(11, "|")
+        file1 = open('classUser.txt', 'r')
+        Items = file1.readlines()
+        file1.close()
+        Items.append(newUser)
+        file1 = open('classUser.txt', 'w')
+        i = 0
+        for j in Items:
+        	line = Items[i]
+	        file1.writelines(line)
+	        file1.writelines("\n")
+	        i += 1
+        file1.close()
+                
         print("\t")
         print("Account Successfully Created!")
