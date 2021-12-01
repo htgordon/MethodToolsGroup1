@@ -72,7 +72,7 @@ class LoggingIn:
         #writing to file
 	zipcode = str(zipcode)
         paymentInfo1 = str(paymentInfo1)
-        newUser = [userName, password, address, city, state, paymentInfo1, paymentInfo2]
+        newUser = [userName, password, address, city, state, zipcode, paymentInfo1, paymentInfo2]
         newUser.insert(1, "|")
         newUser.insert(3, "|")
         newUser.insert(5, "|")
