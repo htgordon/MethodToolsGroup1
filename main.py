@@ -87,7 +87,7 @@ def menu():
                 print("3. Go Back")
                 print("4. Logout")
                 print("\t")
-                input("What would you like to do with your account?")
+                option = input("What would you like to do with your account?")
                 print("\t")
                 if option == "1":
                     print("1")
@@ -95,7 +95,7 @@ def menu():
                     print("Are you sure you want to delete your account?")
                     print("1. Yes")
                     print("2. No")
-                    input(": ")
+                    option = input(": ")
                     if option == "1":
                         p3 = user.User()
                         print(p3.deleteAccount())
