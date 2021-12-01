@@ -9,7 +9,23 @@ class LoggingIn:
             if len(string) > 20:
                 print("Character exceeds limit please make a username below 20 characters.")
             else:
-                break
+                
+                #compare to file
+                file1 = open('classUser.txt', 'r')
+                Items = file1.readlines()
+                i = 0
+                exists = 0
+                for j in Items:
+                    currItem = Items[i]
+                    currItemArray = currItem.split("|")
+                    if currItemArray[0] == userName:
+                        exists = 1
+                    i += 1
+                file1.close()
+                if exists == 1:
+                    print ("Username already in use")
+                else:
+                    break
             
         while True:
             password = input("Password: ")
@@ -70,7 +86,7 @@ class LoggingIn:
                 break
         
         #writing to file
-	zipcode = str(zipcode)
+        zipcode = str(zipcode)
         paymentInfo1 = str(paymentInfo1)
         newUser = [userName, password, address, city, state, zipcode, paymentInfo1, paymentInfo2]
         newUser.insert(1, "|")
