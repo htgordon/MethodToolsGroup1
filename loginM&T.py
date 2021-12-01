@@ -92,3 +92,6 @@ class LoggingIn:
                 
         print("\t")
         print("Account Successfully Created!")
+        
+    def logOn(self):
+        True
