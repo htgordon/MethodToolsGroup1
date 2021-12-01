@@ -1,6 +1,7 @@
 import string
 import login
 import user
+import book
 
 def menu():
     while True:
@@ -37,7 +38,8 @@ def menu():
                         if option == "2":
                             print("2")
                         if option == "3":
-                            print("3")
+                            p5 = book.Book()
+                            print(p5.displayAll())
                         if option == "4":
                             menu()
                 if option == "2":
