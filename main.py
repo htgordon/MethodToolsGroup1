@@ -87,7 +87,8 @@ def menu():
                 print("3. Go Back")
                 print("4. Logout")
                 print("\t")
-                option = input("What would you like to do with your account?")
+                print("What would you like to do with your account?")
+                option = input("Command: ")
                 print("\t")
                 if option == "1":
                     p4 = user.User()
