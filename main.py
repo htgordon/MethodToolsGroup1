@@ -95,6 +95,7 @@ def menu():
                     print("Are you sure you want to delete your account?")
                     print("1. Yes")
                     print("2. No")
+                    input(": ")
                     if option == "1":
                         p3 = user.User()
                         print(p3.deleteAccount())
