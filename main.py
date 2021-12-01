@@ -91,11 +91,19 @@ def menu():
                 if option == "1":
                     print("1")
                 elif option == "2":
-                    print("2")
+                    print("Are you sure you want to delete your account?")
+                    print("1. Yes")
+                    print("2. No")
+                    if option == "1":
+                        p3 = user.User()
+                        print(p3.deleteAccount())
+                        loginMenu()
+                    if option == "2":
+                        menu()
                 elif option == "3":
-                    print("3")
+                    menu()
                 elif option == "4":
-                    print("4")
+                    loginMenu()
         if option == "5":
             print("Logging Out...")
             loginMenu()
