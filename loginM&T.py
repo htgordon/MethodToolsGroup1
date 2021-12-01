@@ -70,6 +70,8 @@ class LoggingIn:
                 break
         
         #writing to file
+	zipcode = str(zipcode)
+        paymentInfo1 = str(paymentInfo1)
         newUser = [userName, password, address, city, state, paymentInfo1, paymentInfo2]
         newUser.insert(1, "|")
         newUser.insert(3, "|")
@@ -77,6 +79,7 @@ class LoggingIn:
         newUser.insert(7, "|")
         newUser.insert(9, "|")
         newUser.insert(11, "|")
+        newUser.insert(13, "|")
         file1 = open('classUser.txt', 'r')
         Items = file1.readlines()
         file1.close()
