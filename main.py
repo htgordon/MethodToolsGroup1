@@ -9,6 +9,8 @@ def menu():
         print("2. Cart")
         print("3. Order History")
         print("4. Account Settings")
+        print("5. Log Out")
+        print("6. Exit")
         print("\t")
         print("What would you like to do?")
         option = input("Command: ")
@@ -94,40 +96,50 @@ def menu():
                     print("3")
                 elif option == "4":
                     print("4")
-while True:
-    print("Welcome to Method&Tools Group 1 Shopping!")
-    print("\t")
-    print("1.Login")
-    print("2.Create Account")
-    print("3.Exit")
-    print("\t")
-    print("What would you like to do?")
-    option = input("Command: ")
-    print("\t")
-
-    if option == "1":
-        print("I work!")  
-
-    elif option == "2":
-        p1 = login.LoggingIn()
-        print(p1.createAccount())
-        print("What would you like to login: ")
-        print("1.Yes")
-        print("2.No")
+        if option == "5":
+            print("Logging Out...")
+            loginMenu()
+        if option == "6":
+            print("Exiting..")
+            exit(0)
+def loginMenu():
+    while True:
+        print("Welcome to Method&Tools Group 1 Shopping!")
+        print("\t")
+        print("1.Login")
+        print("2.Create Account")
+        print("3.Exit")
+        print("\t")
+        print("What would you like to do?")
         option = input("Command: ")
+        print("\t")
+        
         if option == "1":
-            login()
+            p2 = login.LoggingIn()
+            print(p2.logOn())
+            menu()
+            
         elif option == "2":
+            p1 = login.LoggingIn()
+            print(p1.createAccount())
+            print("What would you like to login: ")
+            print("1.Yes")
+            print("2.No")
+            option = input("Command: ")
+            if option == "1":
+                p2 = login.LoggingIn()
+                print(p2.logOn())
+                menu()
+            elif option == "2":
+                break
+            else:
+                print("No such option please try again.")
+                print("\t")
+                
+        elif option == "3":
+            print("Exiting.....")
             break
         else:
             print("No such option please try again.")
             print("\t")
-
-
-    elif option == "3":
-        print("Exiting the Program")
-        break
-
-    else:
-        print("No such option please try again.")
-        print("\t")
+loginMenu()
