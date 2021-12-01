@@ -91,7 +91,7 @@ def menu():
                 print("\t")
                 if option == "1":
                     print("1")
-                elif option == "2":
+                if option == "2":
                     print("Are you sure you want to delete your account?")
                     print("1. Yes")
                     print("2. No")
@@ -102,9 +102,9 @@ def menu():
                         loginMenu()
                     if option == "2":
                         menu()
-                elif option == "3":
+                if option == "3":
                     menu()
-                elif option == "4":
+                if option == "4":
                     loginMenu()
         if option == "5":
             print("Logging Out...")
