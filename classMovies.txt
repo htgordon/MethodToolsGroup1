@@ -1,0 +1,2 @@
+//movieName|price|quantity|director|studio|genre|year
+Spiderverse|20.00|2|Peter Ramsey|Sony Pictures|Comic Book|2018
