@@ -44,7 +44,18 @@ def menu():
                     print("No such option please try again.")
                     print("\t")
         if option == "2":
-            while True:
+            while True:        
+                file1 = open('classCart.txt', 'r')
+                Items = file1.readlines()
+                print("Name  |  Price  |  Quantity  |  Type")
+
+                i = 0
+                for j in Items:
+                    currItem = Items[i]
+                    currItemArray = currItem.split("|")
+                    if currItemArray[0] == activeUser.activeUserName:                    
+                        print(currItemArray[1], " | ", currItemArray[2], " | ", currItemArray[3], " | ", currItemArray[4])
+                    i += 1
                 print("1. Add an item to cart")
                 print("2. Remove an item from cart")
                 print("3. Checkout")
