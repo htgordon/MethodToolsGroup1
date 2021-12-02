@@ -1,6 +1,6 @@
 import activeUser
-
-def addItem(itemName, itemClass):
+class Cart:
+    def addItem(itemName, itemClass):
     print("in cart")
     print("itemName: " + itemName)
     if itemClass == "classBooks.txt":
@@ -55,6 +55,7 @@ def addItem(itemName, itemClass):
             file1.writelines("\n")
             i += 1
         file1.close()
+
         
         
         
