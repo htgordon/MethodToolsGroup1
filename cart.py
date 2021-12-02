@@ -73,9 +73,9 @@ class cart:
                     i += 1
                 file1.close()
         
-    def removeItem(itemName, itemClass):
+    def removeItem(itemName):
         userName = activeUser.activeUserName
-        if itemClass == "classCart.txt":
+        if True:
             file1 = open('classCart.txt', 'r')
             Items = file1.readlines()
             i = 0
