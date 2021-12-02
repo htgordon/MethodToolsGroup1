@@ -2,11 +2,13 @@ class Book:
   def displayAll(self):
         # readlines()
         file1 = open('classBooks.txt', 'r')
-        Lines = file1.readlines()
+        Items = file1.readlines()
 
         # prints to command line, not needed for final
-        count = 0
-        # Strips the newline character
-        for line in Lines:
-            count += 1
-            print("Line{}: {}".format(count, line.strip()))
+        #Read first element from each item
+        i = 0
+        for j in Items:
+            currItem = Items[i]
+            currItemArray = currItem.split("|")
+            print(currItemArray[0] + "\n")
+            i += 1
