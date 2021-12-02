@@ -114,7 +114,7 @@ class cart:
                     Items.pop(index)
                 
                 
-    def checkOut():            
+    def checkOut(self):            
         file1 = open('classCart.txt', 'r')
         Items = file1.readlines()
         file2 = open('classOrderHistory.txt', 'r')
