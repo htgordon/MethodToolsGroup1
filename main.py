@@ -2,6 +2,9 @@ import string
 import login
 import user
 import book
+import activeUser
+
+activeUser.init()
 
 def menu():
     while True:
