@@ -1,3 +1,5 @@
+import activeUser
+
 class LoggingIn:
     def createAccount(self):
         print("Please input the information as asked")
@@ -103,14 +105,15 @@ class LoggingIn:
         file1 = open('classUser.txt', 'w')
         i = 0
         for j in Items:
-        	line = Items[i]
-	        file1.writelines(line)
-	        file1.writelines("\n")
-	        i += 1
+            line = Items[i]
+            file1.writelines(line)
+            file1.writelines("\n")
+            i += 1
         file1.close()
                 
         print("\t")
         print("Account Successfully Created!")
+        activeUser.activeUserName = userName
         
     def logOn(self):
         while True:
@@ -133,4 +136,5 @@ class LoggingIn:
             if match != 1:
                 print("The username or password is incorrect please try again.")
             else:
+                activeUser.activeUserName = userName
                 break
