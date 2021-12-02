@@ -30,38 +30,20 @@ def menu():
                 input("Which items are you searching for: ")
                 print("\t")
                 if option == "1":
-                    while True:
-                        print("1. Search by Genre")
-                        print("2. Search by Name")
-                        print("3. Display all Books")
-                        print("4. Go Back")
-                        option = input("What would you like to do: ")
+                    while True
+                        p5 = book.Book()
+                        print(p5.displayAll())
+                        option = input("Press Y when you would like to return ")
                         print("\t")
-                        if option == "1":
-                            print("1")
-                        if option == "2":
-                            print("2")
-                        if option == "3":
-                            p5 = book.Book()
-                            print(p5.displayAll())
-                        if option == "4":
+                        if option == "Y":
                             menu()
                 if option == "2":
                     while True:
-                        print("1. Search by Genre")
-                        print("2. Search by Name")
-                        print("3. Display all Books")
-                        print("4. Go Back")
-                        option = input("What would you like to do: ")
+                        p6 = movie.Movie()
+                        print(p6.displayAll())
+                        option = input("Press Y when you would like to return ")
                         print("\t")
-                        if option == "1":
-                            print("1")
-                        if option == "2":
-                            print("2")
-                        if option == "3":
-                            p6 = movie.Movie()
-                            print(p6.displayAll())
-                        if option == "4":
+                        if option == "Y":
                             menu()
         if option == "2":
             while True:
@@ -180,7 +162,7 @@ def loginMenu():
         elif option == "2":
             p1 = login.LoggingIn()
             print(p1.createAccount())
-            print("What would you like to login: ")
+            print("Would you like to login: ")
             print("1.Yes")
             print("2.No")
             option = input("Command: ")
