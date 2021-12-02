@@ -2,6 +2,7 @@ import string
 import login
 import user
 import book
+import movie
 import activeUser
 
 activeUser.init()
@@ -49,18 +50,19 @@ def menu():
                     while True:
                         print("1. Search by Genre")
                         print("2. Search by Name")
-                        print("3. Display all Movies")
+                        print("3. Display all Books")
                         print("4. Go Back")
-                        input("What would you like to do: ")
+                        option = input("What would you like to do: ")
                         print("\t")
                         if option == "1":
                             print("1")
-                        elif option == "2":
+                        if option == "2":
                             print("2")
-                        elif option == "3":
-                            print("3")
-                        elif option == "4":
-                            print("4")
+                        if option == "3":
+                            p6 = movie.Movie()
+                            print(p6.displayAll())
+                        if option == "4":
+                            menu()
         if option == "2":
             while True:
                 print("1. Add an item to cart")
