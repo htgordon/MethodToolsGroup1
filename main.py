@@ -120,7 +120,7 @@ def menu():
                 elif option == "4":
                     print("4")
                 elif option == "5":
-                    print("5")
+                    menu()
         if option == "3":
             while True:
                 print("Order History: ")
