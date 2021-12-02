@@ -1,4 +1,5 @@
 import activeUser
+import cart
 
 class Book:
   def displayAll(self):
@@ -40,6 +41,8 @@ class Book:
                 print("2. Go Back")
                 option = input(": ")
                 if option == "1":
-                    print("1")
+                    p1 = cart.Cart()
+                    print(p1.addItem(option, 'classBooks.txt'))
+                    print("Book was added to your cart!)
                 if option == "2":
                     break
