@@ -89,7 +89,9 @@ def menu():
                     print(p7.removeItem(remname))
                     print("\t")
                 elif option == "3":
-                    print("3")
+                    p8 = cart.cart()
+                    print(p8.checkOut())
+                    print("Your items have been checked out!")
                 elif option == "4":
                     menu()
                 else:
