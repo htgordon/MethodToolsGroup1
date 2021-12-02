@@ -99,8 +99,17 @@ def menu():
                     print("\t")
         if option == "3":
             while True:
-                print("Order History: ")
-                print("\t")
+                file1 = open('classOrderHistory.txt', 'r')
+                Items = file1.readlines()
+                print("Name  |  Price  |  Quantity  |  Type")
+
+                i = 0
+                for j in Items:
+                    currItem = Items[i]
+                    currItemArray = currItem.split("|")
+                    if currItemArray[0] == activeUser.activeUserName:
+                        print(currItemArray[1], " | ", currItemArray[2], " | ", currItemArray[3], " | ", currItemArray[4])
+                    i += 1 
         if option == "4":
             while True:
                 print("1. Update Information")
