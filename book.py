@@ -27,7 +27,7 @@ class Book:
             
             print("What would you like to do next: ")
             print("1. Add book to cart")
-            print("2. Go Back)
+            print("2. Go Back")
             option = input(": ")
                   if option == "1":
                     print("1")
