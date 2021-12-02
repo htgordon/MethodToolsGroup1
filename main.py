@@ -45,6 +45,9 @@ def menu():
                         print("\t")
                         if option == "Y":
                             menu()
+                else:
+                    print("No such option please try again.")
+                    print("\t")
         if option == "2":
             while True:
                 print("1. Add an item to cart")
@@ -72,12 +75,18 @@ def menu():
                             print(p6.displayAll())
                             option = input("What movie would you like to add?")
                             print("\t")
+                    else:
+                        print("No such option please try again.")
+                        print("\t")
                 elif option == "2":
                     print("2")
                 elif option == "3":
                     print("3")
                 elif option == "4":
                     menu()
+                else:
+                    print("No such option please try again.")
+                    print("\t")
         if option == "3":
             while True:
                 print("Order History: ")
@@ -117,6 +126,9 @@ def menu():
         if option == "6":
             print("Exiting..")
             exit(0)
+        else:
+            print("No such option please try again.")
+            print("\t")
 def loginMenu():
     while True:
         print("Welcome to Method&Tools Group 1 Shopping!")
