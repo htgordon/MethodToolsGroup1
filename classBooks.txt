@@ -1,5 +1,8 @@
 //bookName|price|quantity|author|publisher|genre|year|format
 Dune|12.01|22|Frank Herbert|Ace|Fantasy|2005|paperback
 Alexander Hamilton|17.99|11|Ron Chernow|The Penguin Press|Biographies|2004|Hardcover
-
-
+Frankenstein|15.99|13|Mary Shelley|Simon & Schuster|Horror|1818|paperback
+Dracula|12.99|19|Bram Stoker|Archibald Constable and Company|Horror|1897|Hardcover
+Moby-Dick|14.99|6|Herman Melville|Harper & Brothers|Adventure|1851|Hardcover
+The Picture of Dorian Gray|21.99|26|Oscar Wilde|Flame Tree Collectable Classics|Gothic Fiction|1890|paperback
+The Odyssey|25.99|10|Homer|Simom & Schuster|Epic|1614|paperback
