@@ -34,18 +34,12 @@ def menu():
                     while True:
                         p5 = book.Book()
                         print(p5.displayAll())
-                        option = input("Press Y when you would like to return ")
                         print("\t")
-                        if option == "Y":
-                            menu()
                 if option == "2":
                     while True:
                         p6 = movie.Movie()
                         print(p6.displayAll())
-                        option = input("Press Y when you would like to return ")
                         print("\t")
-                        if option == "Y":
-                            menu()
                 else:
                     print("No such option please try again.")
                     print("\t")
@@ -68,13 +62,11 @@ def menu():
                         while True:
                             p5 = book.Book()
                             print(p5.displayAll())
-                            option = input("What book would you like to add?")
                             print("\t")
                     if option == "2":
                         while True:
                             p6 = movie.Movie()
                             print(p6.displayAll())
-                            option = input("What movie would you like to add?")
                             print("\t")
                     else:
                         print("No such option please try again.")
