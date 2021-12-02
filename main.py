@@ -116,10 +116,16 @@ def menu():
                         loginMenu()
                     if option == "2":
                         menu()
+                    else:
+                        print("No such option please try again.")
+                        print("\t")
                 if option == "3":
                     menu()
                 if option == "4":
                     loginMenu()
+                else:
+                    print("No such option please try again.")
+                    print("\t")
         if option == "5":
             print("Logging Out...")
             loginMenu()
