@@ -84,7 +84,7 @@ def menu():
                     print("\t")
                     p7 = cart.cart()
                     print(p7.removeItem(remname))
-                    print("Item successfully removed")
+                    print("\t")
                 elif option == "3":
                     print("3")
                 elif option == "4":
