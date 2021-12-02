@@ -30,7 +30,7 @@ def menu():
                 input("Which items are you searching for: ")
                 print("\t")
                 if option == "1":
-                    while True
+                    while True:
                         p5 = book.Book()
                         print(p5.displayAll())
                         option = input("Press Y when you would like to return ")
@@ -76,7 +76,7 @@ def menu():
                             option = input("Press Y when you would like to return ")
                             print("\t")
                             if option == "Y":
-                                menu())
+                                menu()
                 elif option == "2":
                     print("2")
                 elif option == "3":
