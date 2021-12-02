@@ -23,6 +23,16 @@ class Book:
         currItem = Items[i]
         currItemArray = currItem.split("|")
         if currItemArray[0] == option:
-          exists = 1
+          if exists = 1:
+            
+            print("What would you like to do next: ")
+            print("1. Add book to cart")
+            print("2. Go Back)
+            option = input(": ")
+                  if option == "1":
+                    print("1")
+                  if option == "2":
+                    displayAll()
           i += 1
           file1.close()
+        
