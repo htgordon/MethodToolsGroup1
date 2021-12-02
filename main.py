@@ -49,11 +49,10 @@ def menu():
             while True:
                 print("1. Add an item to cart")
                 print("2. Remove an item from cart")
-                print("3. Clear entire cart")
-                print("4. Checkout")
-                print("5. Go back")
+                print("3. Checkout")
+                print("4. Go back")
                 print("\t")
-                input("What would you like you with your cart?")
+                input("Would you like you with your cart?")
                 print("\t")
                 if option == "1":
                     print("1. Books")
@@ -65,25 +64,19 @@ def menu():
                         while True:
                             p5 = book.Book()
                             print(p5.displayAll())
-                            option = input("Press Y when you would like to return ")
+                            option = input("What book would you like to add?")
                             print("\t")
-                            if option == "Y":
-                                menu()
                     if option == "2":
                         while True:
                             p6 = movie.Movie()
                             print(p6.displayAll())
-                            option = input("Press Y when you would like to return ")
+                            option = input("What movie would you like to add?")
                             print("\t")
-                            if option == "Y":
-                                menu()
                 elif option == "2":
                     print("2")
                 elif option == "3":
                     print("3")
                 elif option == "4":
-                    print("4")
-                elif option == "5":
                     menu()
         if option == "3":
             while True:
