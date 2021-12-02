@@ -40,6 +40,8 @@ class Movie:
                 print("2. Go Back")
                 option = input(": ")
                 if option == "1":
-                    print("1")
+                    p1 = cart.Cart()
+                    print(p1.addItem(option, 'classMovies.txt'))
+                    print("Movie was added to your cart!")
                 if option == "2":
                     break
