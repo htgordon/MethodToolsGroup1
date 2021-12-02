@@ -82,8 +82,9 @@ def menu():
                 elif option == "2":
                     remname = input("What item would you like to remove?")
                     print("\t")
-                    
-                    print("2")
+                    p7 = cart.cart()
+                    print(p7.removeItem(remname))
+                    print("Item successfully removed")
                 elif option == "3":
                     print("3")
                 elif option == "4":
