@@ -4,6 +4,7 @@ import user
 import book
 import movie
 import activeUser
+import cart
 
 activeUser.init()
 
@@ -79,6 +80,9 @@ def menu():
                         print("No such option please try again.")
                         print("\t")
                 elif option == "2":
+                    remname = input("What item would you like to remove?")
+                    print("\t")
+                    
                     print("2")
                 elif option == "3":
                     print("3")
