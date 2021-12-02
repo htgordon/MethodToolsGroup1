@@ -1,6 +1,8 @@
 import activeUser
 import cart
 
+from cart import *
+
 class Book:
   def displayAll(self):
     while True:
@@ -15,6 +17,7 @@ class Book:
             currItem = Items[i]
             currItemArray = currItem.split("|")
             print(currItemArray[0] + "\n")
+            bookName = currItemArray[0]
             i += 1
         
         option = input("Which book would you like to look more at: ")
@@ -41,8 +44,7 @@ class Book:
                 print("2. Go Back")
                 option = input(": ")
                 if option == "1":
-                    p1 = cart.Cart()
-                    print(p1.addItem(option, 'classBooks.txt'))
-                    print("Book was added to your cart!)
+                    Cart.addItem(bookName, "classBooks.txt")
+                    break
                 if option == "2":
                     break
