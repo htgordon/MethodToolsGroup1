@@ -21,6 +21,7 @@ class Book:
             i += 1
         
         option = input("Which book would you like to look more at: ")
+        bookName = option
         #compare to file
         file1 = open('classBooks.txt', 'r')
         Items = file1.readlines()
@@ -44,7 +45,7 @@ class Book:
                 print("2. Go Back")
                 option = input(": ")
                 if option == "1":
-                    Cart.addItem(bookName, "classBooks.txt")
+                    cart.addItem(bookName, "classBooks.txt")
                     break
                 if option == "2":
                     break
