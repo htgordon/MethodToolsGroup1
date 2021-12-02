@@ -1,0 +1,5 @@
+//bookName|price|quantity|author|publisher|genre|year|format
+Dune|12.01|22|Frank Herbert|Ace|Fantasy|2005|paperback
+Alexander Hamilton|17.99|11|Ron Chernow|The Penguin Press|Biographies|2004|Hardcover
+
+
