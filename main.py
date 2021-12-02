@@ -74,7 +74,45 @@ def menu():
                 input("What would you like you with your cart?")
                 print("\t")
                 if option == "1":
-                    print("1")
+                    print("1. Books")
+                    print("2. Movies")
+                    print("\t")
+                    input("Which items are you searching for: ")
+                    print("\t")
+                    if option == "1":
+                        while True:
+                            print("1. Search by Genre")
+                            print("2. Search by Name")
+                            print("3. Display all Books")
+                            print("4. Go Back")
+                            option = input("What would you like to do: ")
+                            print("\t")
+                            if option == "1":
+                                print("1")
+                            if option == "2":
+                                print("2")
+                            if option == "3":
+                                p5 = book.Book()
+                                print(p5.displayAll())
+                            if option == "4":
+                                menu()
+                    if option == "2":
+                        while True:
+                            print("1. Search by Genre")
+                            print("2. Search by Name")
+                            print("3. Display all Books")
+                            print("4. Go Back")
+                            option = input("What would you like to do: ")
+                            print("\t")
+                            if option == "1":
+                                print("1")
+                            if option == "2":
+                                print("2")
+                            if option == "3":
+                                p6 = movie.Movie()
+                                print(p6.displayAll())
+                            if option == "4":
+                                menu()
                 elif option == "2":
                     print("2")
                 elif option == "3":
