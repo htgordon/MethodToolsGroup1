@@ -63,7 +63,7 @@ def menu():
                             print("4")
         if option == "2":
             while True:
-                print("1. Add an item from cart")
+                print("1. Add an item to cart")
                 print("2. Remove an item from cart")
                 print("3. Clear entire cart")
                 print("4. Checkout")
